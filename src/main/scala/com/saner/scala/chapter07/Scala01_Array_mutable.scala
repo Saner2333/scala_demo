@@ -14,8 +14,8 @@ object Scala01_Array_mutable {
         strings.update(0, "q")
         val strings1: ArrayBuffer[String] = strings.+:("e")
         //        println(strings1)
-//        strings.remove(1)
-//        val strings2 = strings - "q"
+        //        strings.remove(1)
+        //        val strings2 = strings - "q"
         val strings2 = strings.drop(2)
         println(strings2)
     }

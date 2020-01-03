@@ -12,16 +12,19 @@ object scala07_Abstract {
 abstract class Person7 {
     val name: String
     val age: Int
-    def hello():Unit
-    def say(): Unit ={
+
+    def hello(): Unit
+
+    def say(): Unit = {
         println("par say")
     }
 }
-class User7 extends Person7{
+
+class User7 extends Person7 {
     val name: String = "hhh"
     val age: Int = 18
 
-    def hello(): Unit ={
+    def hello(): Unit = {
         println("hello")
     }
 

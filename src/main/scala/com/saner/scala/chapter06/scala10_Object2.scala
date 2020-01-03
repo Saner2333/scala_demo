@@ -19,9 +19,9 @@ class Person10 private(var age: Int) {
     //        this(18)
     //    }
 
-   def fun(): Unit ={
-       println("hhh")
-   }
+    def fun(): Unit = {
+        println("hhh")
+    }
 
 }
 
@@ -30,7 +30,6 @@ object Person10 {
     def apply(age: Int): Person10 = new Person10(age)
 
     def apply(): Person10 = new Person10(18)
-
 
 
 }

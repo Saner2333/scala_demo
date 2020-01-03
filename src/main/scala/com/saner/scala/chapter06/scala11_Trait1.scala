@@ -7,13 +7,15 @@ object scala11_Trait1 {
     }
 
 }
-trait Person11{
-    def run() : Unit
-    def test(): Unit ={
+
+trait Person11 {
+    def run(): Unit
+
+    def test(): Unit = {
     }
 }
 
-class User11 extends Person11{
+class User11 extends Person11 {
     override def run(): Unit = {
         println("hhh")
     }

@@ -7,12 +7,16 @@ object scala06_Abstract {
     }
 
 }
-abstract class User6{
-    var name : String ;
+
+abstract class User6 {
+    var name: String;
+
     def test()
-    def test1(): Unit ={
+
+    def test1(): Unit = {
         println("test1")
     }
-    var name1:String = "123"
+
+    var name1: String = "123"
 
 }

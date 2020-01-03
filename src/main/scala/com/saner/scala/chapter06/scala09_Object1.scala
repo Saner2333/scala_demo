@@ -6,7 +6,7 @@ object scala09_Object1 {
         //伴生对象中的属性都可以通过伴生对象名调用
         println(User9.name)
         //伴生类不能调用自己的属性
-//        println(User9.age)
+        //        println(User9.age)
     }
 
 }

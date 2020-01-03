@@ -12,6 +12,6 @@ object Scala02_Fields {
 
 class User {
     var name: String = _
-    private [chapter06] val age = 18
+    private[chapter06] val age = 18
 
 }

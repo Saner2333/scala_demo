@@ -12,17 +12,16 @@ object Scala19_Method4 {
         //             )
         println(list.reduce(_ + _))
         // ((((1 - 2) - 3)- 4) - 5)
-        println(list.reduceLeft(_ - _))//-13
+        println(list.reduceLeft(_ - _)) //-13
         //(1 - (2 - (3 - (4 - 5))))
         //reversed.reduceLeft[B]((x, y) => op(y, x))
-        println(list.reduceRight(_ - _))//3
+        println(list.reduceRight(_ - _)) //3
         // 1,2,3,4,5
         // 5,4,3,2,1
         // 4 - 5 = -1
         // 3 - (-1) = 4
         // 2 - 4 = -2
         // 1 - (-2) = 3
-
 
 
     }

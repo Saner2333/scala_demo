@@ -21,17 +21,17 @@ object exc {
         //分组
         //Hadoop -> List((Hadoop,4), (Hadoop,3), (Hadoop,2))
         val stringToTuples: Map[String, List[(String, Int)]] = tuples.groupBy(i => i._1)
-//        println(stringToTuples)
+        //        println(stringToTuples)
 
         //map
-//        Map(Kafka -> 4, Hadoop -> 9, Hello -> 10, Hive -> 7)
+        //        Map(Kafka -> 4, Hadoop -> 9, Hello -> 10, Hive -> 7)
         val stringToInt: Map[String, Int] = stringToTuples.map((i => {
 
             val count: List[Int] = i._2.map(tt => tt._2)
             (i._1, count.sum)
 
         }))
-//        println(stringToInt)
+        //        println(stringToInt)
 
         //排序取前3
         val list1 = stringToInt.toList.sortWith((left, right) => left._2 > right._2).take(3)

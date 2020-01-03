@@ -1,7 +1,7 @@
 package com.saner.scala.chapter06
 
 object scala12_Trait2 {
-//scala 动态混入
+    //scala 动态混入
     //创建对象时，可以动态添加功能
     def main(args: Array[String]): Unit = {
         val user1 = new User12 with Person12

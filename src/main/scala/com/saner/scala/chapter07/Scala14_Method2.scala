@@ -37,8 +37,8 @@ object Scala14_Method2 {
 
         // TODO 排序
         // 通过指定的规则进行排序, 默认为升序
-//        println(list1.sortBy(i => i))
-//        println(list1.sortBy(i => i)(Ordering.Int.reverse))
+        //        println(list1.sortBy(i => i))
+        //        println(list1.sortBy(i => i)(Ordering.Int.reverse))
 
         val stu1 = new Student()
         stu1.id = 1
@@ -48,11 +48,11 @@ object Scala14_Method2 {
         stu2.name = "lisi"
 
         val list6 = List(stu2, stu1)
-//        println( list6.sortBy(stu=>stu.id + stu.name) )
-//        println(list6.sortBy(stu => (stu.id,stu.name)))
+        //        println( list6.sortBy(stu=>stu.id + stu.name) )
+        //        println(list6.sortBy(stu => (stu.id,stu.name)))
 
         val students = list6.sortWith(
-            (left, right) =>{
+            (left, right) => {
 
                 if (left.id > right.id) {
                     true
@@ -66,9 +66,9 @@ object Scala14_Method2 {
         println(students)
 
 
-
     }
 }
+
 class Student {
     var id: Int = _
     var name: String = _
