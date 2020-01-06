@@ -1,2 +1,2 @@
 # scala_demo
-some scala demo
+some scala demos
