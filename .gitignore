@@ -16,4 +16,4 @@ target/
 .classpath
 *.iws
 *.ipr
-!/.gitignore
+.gitignore
